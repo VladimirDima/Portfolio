@@ -1,0 +1,165 @@
+
+@import 'variables';
+
+.container {
+  width: 100%;
+  padding-top: 10%;
+}
+
+.container .sub-container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.list1 {
+  list-style: none;
+}
+
+.list1-item {
+  margin: 10px;
+  text-align: left;
+
+}
+.list2-item {
+  margin: 10px;
+  text-align: right;
+
+}
+
+@media screen and (min-width: 480px) {
+
+  .list1 {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 520px;
+  }
+
+  .list1-item {
+    width: 480px;
+    flex-grow: 0;
+  }
+  .list2-item {
+    width: 480px;
+    flex-grow: 0;
+  }
+}
+
+@media screen and (min-width: 800px) {
+
+  .list1 {
+    width: 1000px;
+  }
+}
+
+.logo-cont {
+  background: url(../img/brush.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  
+}
+.port-desc {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 30px;
+  padding: 6px;
+}
+.port-menu-cont {
+  padding-top: 5%;
+}
+.port-menu {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  .port-menu-item {
+    font-size: $font-small;
+    font-weight: bold;
+  }
+}
+.p-port {
+  font-size: $font-small;
+}
+// Buttons
+//button1
+.button {
+  position: relative;
+  width: 190px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.text {
+  position: absolute;
+  top: 11px;
+  left: 0px;
+  transition: all, 1s;
+  font-size: $font-medium;
+  font-family: $sec-font;
+  font-weight: bold;
+}
+.img-back {
+  transition: all, 1s;
+  height: 200px;
+  width: 235px;
+  background: url('../img/graphics/button-brush-b.svg');
+  background-size: contain;
+  background-position-y: 10px;
+  background-repeat: no-repeat;
+  transform: translatex(-235px);
+}
+.button a:hover {
+  cursor: pointer;
+  color: #fff;
+}
+.button:hover > .img-back {
+    transform: translatex(-100px);
+  }
+.button:hover > .text {
+  color: #fff;
+}
+// button2
+.button2 {
+  position: relative;
+  width: 190px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 20px;
+  float: right;
+}
+.text2 {
+  position: absolute;
+  top: 11px;
+  right: 0px;
+  transition: all, 1s;
+  font-size: $font-medium;
+  font-family: $sec-font;
+  font-weight: bold;
+}
+.img-back2 {
+  transition: all, 1s;
+  height: 200px;
+  width: 235px;
+  background: url('../img/graphics/button-brush-b.svg');
+  background-size: contain;
+  background-position-y: 10px;
+  background-repeat: no-repeat;
+  transform: translatex(235px);
+}
+.button2 a:hover {
+  cursor: pointer;
+  color: #fff;
+}
+.button2:hover > .img-back2 {
+    transform: translatex(50px);
+  }
+.button2:hover > .text2 {
+  color: #fff;
+}
+// end buttons
+.port-push-top {
+  padding-top: 20px;
+}

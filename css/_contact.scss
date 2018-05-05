@@ -1,0 +1,31 @@
+@import 'variables';
+// contact
+
+.social-menu {
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	.social-menu-item {
+		padding: 30px;
+		text-align: center;
+	}
+
+	.text-social {
+		
+    	margin: 0 auto;
+    	text-align: center;
+    	font-family: $sec-font;
+    	font-size: $font-medium;
+    	font-weight: bold;
+	}
+}
+.or-call {
+	width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: $font-medium;
+    padding-top: 2%;
+}
+

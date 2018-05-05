@@ -1,0 +1,95 @@
+@import 'variables';
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+@media screen and (max-width: 667px) {
+	.small-phone {
+		font-size: $font-small !important;
+		color: #000 !important;
+    	background: none !important;
+	}
+	.main-title {
+		font-size: 65px !important;
+	}
+	.ip-main {
+		padding: 245px 0 10em 0;
+	}
+	.header .arrow-down {
+		width: 60px;
+		height: 60px;
+		margin-top: 0;
+	}
+	.title-brush {
+		margin-top: 0px;
+    	padding-top: 30px;
+    	height: 70px;
+	}
+}
+
+@media screen and (min-device-width: 376px) {
+	.graphic-content {
+		display: flex;
+		.graphic-item {
+			width: 400px;
+		}
+		.graphic-item-right {
+			width: 400px;
+			order: 2;
+		}
+		.graphic-item-left {
+			width: 400px;
+		}
+		.app-list {
+			float: right;
+		}
+	}
+
+	.section-title {
+		font-size: $font-large;
+	}
+	.story {
+		display: block;
+	}
+	.svg-thang {
+		width: 300px;
+	}
+	.svg-thang2 {
+		width: 250px;
+	}
+	.svg-thang3 {
+		width: 150px;
+	}
+	.svg-thingy {
+		width: 600px;
+	}
+	.title-brush2 {
+		padding-top: 35px;
+		height: 100px;
+		background-size: contain;
+	}
+	.burger-menu-elem {
+		position: absolute;
+	  	width: 100%;
+	  	height: 100vh;
+	  	margin: -100px 0 0 -60px;
+	  	padding: 50px;
+	  	padding-top: 125px;
+	  	text-align: left;
+	}
+	.about-cont{
+		width: 700px;
+	}
+	.port-menu {
+		width: 50%;
+		.port-menu-item {
+			font-size: $font-medium;
+		}
+	}
+	.port-desc {
+		width: 700px;
+		font-size: $font-medium;
+	}
+	.social-menu {
+		width: 1000px;
+	}
+}
+	
